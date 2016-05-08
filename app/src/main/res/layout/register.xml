@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4ad66">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="USER REGISTRATION"
+            android:id="@+id/tvUser"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#f32d0a" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter first name"
+            android:ems="10"
+            android:id="@+id/tvFirstName"
+            android:layout_marginTop="5sp"
+            android:textSize="15sp"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter last name"
+            android:ems="10"
+            android:id="@+id/tvLastName"
+            android:textSize="15sp"
+            android:layout_gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
+            android:inputType="textEmailAddress"
+            android:hint="Email_id"
+           />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender">
+
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"
+            android:layout_marginLeft="100sp"
+            android:id="@+id/rbMale"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:layout_marginLeft="100sp"
+            android:textSize="20sp"
+            android:id="@+id/rbFemale" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:layout_marginLeft="100sp"
+            android:textSize="20sp"
+            android:id="@+id/rbOthers"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MobileNo"
+            android:id="@+id/tvMobile" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="DD/MM/YY"
+            android:textSize="20sp"
+            android:ems="10"
+            android:id="@+id/tvDate"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddress1"
+            android:inputType="textPostalAddress"
+            android:hint="Address Line1"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAddress2"
+            android:inputType="textPostalAddress"
+            android:hint="Address Line2"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tvCountry"-->
+            <!--android:hint="Country"-->
+            <!--android:textSize="20sp"/>-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:id="@+id/state_spinner"
+
+            android:layout_gravity="center_horizontal"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:id="@+id/city_spinner"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tvCity"-->
+            <!--android:hint="City"-->
+            <!--android:textSize="20sp" />-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/tvPassword"
+            android:hint="Enter Password"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/tvRePassword"
+            android:hint="Confirm password"
+            android:textSize="20sp"/>
+
+
+        <Button
+
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:text="Register"
+           android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="#ed8f48"
+            android:textAllCaps="false"/>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
